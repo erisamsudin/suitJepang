@@ -1,10 +1,7 @@
 import Utils.IOUtils
-import java.lang.NumberFormatException
 import kotlin.system.exitProcess
 
 class App {
-    var listPilihan = listOf("1. Gunting ", "2. Kertas", "3. Batu")
-    var gameStart = ""
     companion object {
         @JvmStatic
         fun main(args: Array<String>) {
@@ -40,12 +37,17 @@ class App {
         var input = ""
         do {
             println("Pilih mode bermain")
-            println("1. Start Game, 2. Exit")
+            println("1. Mutiple Game, 2. Play With Bot , 3. Exit")
             input = IOUtils.readString()
             if(input == "1") {
                 printInputData()
             }
             else if(input == "2") {
+                print("Masih Proses Pembuatan fitur ini")
+                exitProcess(0)
+            }
+
+            else if(input == "3") {
                 print("Terima Kasih")
                 exitProcess(0)
             }

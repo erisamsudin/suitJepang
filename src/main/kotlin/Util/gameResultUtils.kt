@@ -1,7 +1,5 @@
 package Util
 
-import Util.gameResultContract
-
 public class gameResultUtils : gameResultContract{
 
     override fun resultGame(playerOne: String, playerTwo: String) {
